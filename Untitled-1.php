@@ -7,6 +7,22 @@
 </head>
 <body>
     <?php echo "tu funkcja echo" ;?>
+    <br>
+    <?php echo "tu " . "funkcja " . "echo" ;?>
+    <br>
+    <?php echo 'tu ' . 'funkcja' . 'echo' ;?>
+    <?php echo 'tu  funkcja echo' ;?>
+<br>
+<br>
+    <?php print "tu funkcja echo" ;?>
+    <br>
+    <?php print "tu" . "funkcja" . "echo" ;?>
+    <br>
+    <?php print 'tu funkcja echo' ;?>
+    <br>
+    <?php print 'tu' . 'funkcja' . 'echo' ;?>
+
+
     
 </body>
 </html>
