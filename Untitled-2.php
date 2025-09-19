@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .ramka {
+        border: 50px;
+        color: blue;
+        padding: 10px;
+        text-shadow: 5px 5px blue;
+
+    }
+    </style>
+
+    
+
+    
+        
+
 <body>
     <?php
     $tekst= "ala ma kota";
@@ -22,15 +37,20 @@
     var_dump($liczby."<br>");
     var_dump($liczbyrzeczywiste. "<br>");
     var_dump($bool);
-    echo "<br>"
-
-    define ("pierwszastala" , 1994);
+    echo "<br>";
+  
+    define ("pierwszastala" , "1994");
     print pierwszastala;
     define ("drugastala" , "miramax");
     print drugastala;
 
-    var_export(pierwszastala . "<br>")
-    var_export()
+    var_export(pierwszastala . "<br>");
+    var_export(drugastala . "<br>");
+    echo "<br>"
+
+    
+
+
     ?>
     
     
