@@ -10,7 +10,6 @@
     <?php
     $liczba= 77;
     ?>
-    <br>
     <style>
             .tabela {
             color: red;
