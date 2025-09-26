@@ -10,23 +10,29 @@
     <?php
     $liczba= 77;
     ?>
+    <br>
     <style>
-            .tabela {
-            color: red;
-            font-size: 80px;
-            text-shadow: 5px 5px #FFF000; 
-            border-collapse: collapse;
-            border-color: green;
-            padding: 50px;
-            border-style: dashed;
+            table {
+                border-collapse: collapse;
             }
+
+            td {
+                border: 10px dotted green;
+                color: red;
+                font-size: 80px;
+                text-shadow: 5px 5px #FFF000;
+                padding: 50px;
+                font-weight: 200
+
+            }
+            
+
 </style>
 <table>
     <tr>
-<td> 
-    <span class="tabela">
-<?php echo $liczba*1 ?>
-        </span></td>
+        <td> 
+            <?php echo $liczba * 1 ?>
+        </td>
 <td><span class="tabela">
      <?php echo $liczba*2 ?>
         </span></td>
