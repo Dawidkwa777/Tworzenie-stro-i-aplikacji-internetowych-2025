@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php
+<head>
+     <?php
 $haslo1 = "mbank.pl";
 $haslo2 = "rnbank.pl";
-
 if ($haslo1 == $haslo2) {
-    $wynik = "Hasła są takie same";
-} else {
-    $wynik = "Hasła są różne";
+    $wynik = "hasla sa takie same";
+} else{
+    $wynik = "hasla sa rozne";
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>Hasła</title>
+</head>
+<body>
     <style>
         table {
             border-collapse: collapse;
@@ -32,9 +28,8 @@ if ($haslo1 == $haslo2) {
     </style>
 </head>
 <body>
-
-<table>
-    <tr>
+   <table>
+      <tr>
         <th><?php echo $haslo1; ?></th>
         <th><?php echo $haslo2; ?></th>
     </tr>
@@ -42,13 +37,6 @@ if ($haslo1 == $haslo2) {
         <td colspan="2"><?php echo $wynik; ?></td>
     </tr>
 </table>
-
-</body>
-</html>
-, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     
 </body>
 </html>
