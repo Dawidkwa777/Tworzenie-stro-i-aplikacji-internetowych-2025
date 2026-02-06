@@ -1,54 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <?php
-$haslo1 = "mbank.pl";
-$haslo2 = "rnbank.pl";
+<?php
+$liczba = rand(1, 30);
 
-if ($haslo1 == $haslo2) {
-    $wynik = "Hasła są takie same";
-} else {
-    $wynik = "Hasła są różne";
-}
+$dzielniki = [
+    2 => "dwa",
+    3 => "trzy",
+    4 => "cztery",
+    5 => "pięć",
+    6 => "sześć",
+    7 => "siedem",
+    8 => "osiem",
+    9 => "dziewięć"
+];
 ?>
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Hasła</title>
+    <title>Sprawdzanie podzielności</title>
     <style>
-        table {
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 5px;
-            text-align: center;
+        body {
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
 
-<table>
-    <tr>
-        <th><?php echo $haslo1; ?></th>
-        <th><?php echo $haslo2; ?></th>
-    </tr>
-    <tr>
-        <td colspan="2"><?php echo $wynik; ?></td>
-    </tr>
-</table>
+<p><strong>Liczba <?php echo $liczba; ?> jest podzielna przez:</strong></p>
 
-</body>
-</html>
-, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+<ul>
+    <?php
+    foreach ($dzielniki as $wartosc => $slownie) {
+        if ($liczba % $wartosc === 0) {
+            echo "<li>$slownie</li>";
+        }
+    }
+    ?>
+</ul>
+
 </body>
 </html>
