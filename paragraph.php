@@ -14,7 +14,7 @@
     ?>
 
 
-    <h3 style="color:red;">
+    <h3 style="color:red;"<?php<?php
     <?=$a ?> jest liczba pierwsza.</h3>
     <p style="color:#336ee1;">Liczba Pi zaokraglona do dwoch miejsc po przecinku <?=$b ?></p>
     <div style="color:green; text-decoration: underline overline;">
