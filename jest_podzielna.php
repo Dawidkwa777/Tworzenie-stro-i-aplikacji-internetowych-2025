@@ -35,8 +35,22 @@ liczba <?php echo "$random"?> jest podzielona przez:
     if ($random % 6 === 0) {
         echo "sześć";
     }
-    
-<body>
+    ?></li>
+    <li><?php
+    if ($random % 7 === 0) {
+        echo "siedem";
+    }
+    ?></li>
+    <li><?php
+    if ($random % 8 === 0) {
+        echo "osiem" ;
+    }
+    ?></li>
+    <li><?php
+    if ($random % 9 === 0) {
+        echo "dziewięć";
+    }
+?>
     
 </body>
 </html>
