@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <?php
-echo '<p class="zakres">';
-
-for ($i = -10; $i <= 10; $i++) {
-    if ($i < 10) {
-        echo $i . ', ';
-    } else {
-        echo $i . '.';
-    }
-}
-
-echo '</p>';
+ 
+<?php
+$tekst = "Kon'nichiwa sekai";
+$znaki = str_split($tekst);
 ?>
 
-<style>
-.zakres {
-    color: yellowgreen;
-    border-top: 10px double greenyellow;
-    border-bottom: 10px double greenyellow;
-    font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-shadow: 1px 1px 5px forestgreen;
-}
-</style>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Witaj Świecie</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 3px dotted red;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <?php foreach ($znaki as $znak): ?>
+            <td><?php echo htmlspecialchars($znak); ?></td>
+        <?php endforeach; ?>
+    </tr>
+</table>
+
+</body>
+</html>
 
 
     

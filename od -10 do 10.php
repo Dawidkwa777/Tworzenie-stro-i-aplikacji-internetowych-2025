@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+.zakres {
+    color:yellowgreen;
+    border-top: 10px double greenyellow; 
+    border-bottom: 10px double greenyellow;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 5px forestgreen;
+}
+</style>
  <?php
  echo '<p class="zakres">';
  for ($i =-10; $i <=10; $i++) {
@@ -17,17 +28,7 @@
 }
  echo '</p>';
     ?>
-    <style>
-.zakres {
-    color:yellowgreen;
-    border-top: 10px ; 
-    border-bottom: 10px;
-    font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-shadow: 1px 1px 5px forestgreen
-}
-</style>
+   
 
 
 </body>
