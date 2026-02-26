@@ -1,0 +1,47 @@
+.static-container div {
+    width: 200px;
+    padding: 20px;
+    color: white;
+}
+
+.static1 { background: blue; }
+.static2 { background: red; }
+.static3 { background: green; }
+
+
+.relative-container {
+    margin-top: 40px;
+}
+
+.relative-container div {
+    width: 200px;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+.relative1 { 
+    background: blue; 
+}
+
+.relative2 { 
+    background: red; 
+    left: 40px;
+    top: 10px;
+}
+
+.relative3 { 
+    background: green; 
+}
+
+
+.fixed-box {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 250px;
+    padding: 20px;
+    background: #f4b6b6;
+    color: darkred;
+    font-weight: bold;
+}

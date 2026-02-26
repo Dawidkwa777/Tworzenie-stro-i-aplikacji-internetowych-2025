@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Pole trójkąta</title>
+<style>
+    p {
+        text-align: center;
+        border: 1px solid darkorange;
+        left-margin: 1px;
+        right-margin: 1px;
+        top-margin: 25px;
+        bottom-margin: 25px;
+    }
+</style>
+</head>
+<body>
+    <? 
+    $a = 17;
+    $b = 17;
+    $pierwiastek = sqr($a);
+    $pole = 
+    ?>
+    <p>Pole trójkąta równobocznego o bok długości <?= $b; ?>jest równe <?= ?>j<sup>2</sup></p>
+</body>
+</html>

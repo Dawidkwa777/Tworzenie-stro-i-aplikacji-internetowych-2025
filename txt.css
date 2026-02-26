@@ -1,0 +1,66 @@
+body{
+    font-family: Verdana, sans-serif;
+    font-size: 115%;
+    background-image: linear-gradient(to right, aqua,lightgreen);
+    text-align: center;
+}
+h1{
+    font-family: "Rubik 80s Fade", system-ui;
+  font-weight: 600;
+  font-style: normal;
+ 
+}
+h2{
+   font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: italic;
+  color: red;
+}
+p{
+    font-family: "Qwigley";
+    font-size: 115%;
+ 
+}
+ 
+#lower{
+    text-transform:lowercase ;
+}
+ 
+#upper{
+    text-transform:uppercase ;
+}
+ 
+#capitalize{
+    text-transform: capitalize ;
+}
+ 
+#under{
+    text-decoration:underline blue;
+}
+ 
+#over{
+    text-decoration: overline green;
+ 
+}
+ 
+#line{
+    text-decoration: line-through crimson ;
+}
+#wavy{
+    text-decoration-color: purple;
+    text-decoration-line:underline ;
+    text-decoration-style:wavy ;
+    text-decoration-thickness: 4px;
+}
+ 
+#prp{
+    text-decoration: underline double rgb(150, 75, 75) 3px;
+}
+#pik{
+    text-decoration:pink underline overline 1.5px;
+}
+ 
+#spcd{
+    border: rgb(182, 23, 119) solid 2px;
+}
+ 

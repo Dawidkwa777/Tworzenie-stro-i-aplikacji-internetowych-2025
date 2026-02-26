@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qwigley&display=swap" rel="stylesheet">
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+ 
+ <link rel="stylesheet" href="txt.css">
+</head>
+<body>
+    <h1>Czcionka "Qwigley"</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quis perspiciatis accusamus praesentium quaerat vel voluptate qui?</p>
+ 
+        <p>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Sit reiciendis vel debitis cum.</p>
+ 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Porro cupiditate esse laboriosam voluptate nobis expedita!</p>
+    </div>
+    <br><br>
+ 
+    <div>
+        <h1>Zmiana wielkości liter</h1>
+ 
+        <h2>Małe litery</h2>
+ 
+        <p id="lower">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quis perspiciatis accusamus praesentium quaerat vel voluptate qui?</p>
+ 
+        <h2>Wielkie litery</h2>
+        <p id="upper">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Sit reiciendis vel debitis cum.</p>
+ 
+        <h2>Każde słowo z rozpoczyna się z dużej litery</h2>
+        <p id="capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Porro cupiditate esse laboriosam voluptate nobis expedita!</p>
+ 
+    </div>
+    <br><br>
+ 
+    <div>
+        <h1>Podkreślenia nadkreślenia etc|</h1>
+ 
+        <h2>Podkreślenie</h2>
+        <p id="under">Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Cum consequatur nesciunt blanditiis.</p>
+ 
+        <h2>Nadkreślenie</h2>
+        <p id="over">Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Cum consequatur nesciunt blanditiis.</p>
+ 
+        <h2>Przekreślenie</h2>
+        <p id="line">Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Cum consequatur nesciunt blanditiis.</p>
+    </div>
+    <br><br>
+    <div>
+        <h1>Interlinia</h1>
+        <h2>Fala jako podkreślenie</h2>
+        <p id="wavy">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quis perspiciatis accusamus praesentium quaerat vel voluptate qui?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quis perspiciatis accusamus praesentium quaerat vel voluptate qui?</p>
+ 
+        <h2>Podwójna interlinia</h2>
+        <p id="prp">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quis perspiciatis accusamus praesentium quaerat vel voluptate qui?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quis perspiciatis accusamus praesentium quaerat vel voluptate qui?</p>
+ 
+        <h2>Podkreślenie i Nadkreślenie</h2>
+        <p id="pik">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Suscipit expedita minima placeat.</p>
+ 
+    <div>
+        <h1>Link</h1>
+ 
+        <div id="spcd" ><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration">Dekoracja tekstu</a></div>
+   
+   
+    </div>
+    <br><br><br><br><br><br><br><br>
+ 
+         
+ 
+ 
+</body>
+</html>
