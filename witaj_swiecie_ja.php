@@ -1,36 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
-    <style>
-        table {
-            border-collapse: collapse;
-        }
-    td { border: 3px dotted red;
-        padding: 15px;
-        text-align: center;
-        font-size: 18px;
-   } 
-   </style>
+<?php
 
-</head>
-<body>
-<?php 
-    $tekst = "kon ' nichiwa sekai";
-    $znaki = str_split($tekst);
-    ?>
-    <table>
-       <tr>
-        <?php foreach ($znaki as $znak) {?>
-            <td><?php  echo $znaki($tekst); ?></td>
-        <?php foreach;}?> 
-    </tr>
-    </table>
+$filmy = [
+    "Skazani na Shawshank" => "dramat",
+    "Nietykalni" => "biograficzny",
+    "Władca Pierścieni: Powrót króla" => "fantasy",
+    "Pulp Fiction" => "gangsterski",
+    "Siedem" => "kryminał",
+    "Podziemny krąg" => "thriller",
+    "Django" => "western",
+    "Król Lew" => "animacja",
+    "Avengers: Wojna bez granic" => "akcja",
+    "Dobry, zły i brzydki" => "western"
+];
+
+function wyswietlTabele($tablica, $opis) {
+    echo "<table style='border-collapse: collapse; margin-bottom:20px;'>";
+    echo "<caption><strong>$opis</strong></caption>";
+    echo "<tr>
+            <th style='border:1px dotted black; padding:3px;'>Tytuł</th>
+            <th style='border:1px dotted black; padding:3px;'>Gatunek</th>
+          </tr>";
+
+    foreach ($tablica as $klucz => $wartosc) {
+        echo "<tr>
+                <td style='border:1px dotted black; padding:3px;'>$klucz</td>
+                <td style='border:1px dotted black; padding:3px;'>$wartosc</td>
+              </tr>";
+    }
+
+    echo "</table>";
+}
+
+
+$wartosci_rosnaco = $filmy;
+asort($wartosci_rosnaco);
+wyswietlTabele($wartosci_rosnaco, "Sortowanie rosnąco według wartości (asort)");
+
+$klucze_rosnaco = $filmy;
+ksort($klucze_rosnaco);
+wyswietlTabele($klucze_rosnaco, "Sortowanie rosnąco według kluczy (ksort)");
+
+
+$wartosci_malejaco = $filmy;
+arsort($wartosci_malejaco);
+wyswietlTabele($wartosci_malejaco, "Sortowanie malejąco według wartości (arsort)");
+
+
+$klucze_malejaco = $filmy;
+krsort($klucze_malejaco);
+wyswietlTabele($klucze_malejaco, "Sortowanie malejąco według kluczy (krsort)");
+
+?>
 
 
     
-</body>
-</html>

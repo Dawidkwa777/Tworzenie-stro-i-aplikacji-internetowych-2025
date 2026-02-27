@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <style>
-        
+<?php 
+    $owoce = array_fill(8,5,"mango");
+?>
+<pre><?php print_r($owoce) ?></pre>
     
-
 </body>
 </html>
