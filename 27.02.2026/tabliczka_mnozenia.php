@@ -1,18 +1,20 @@
-
-
-    <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Tabliczka mnożenia</title>
-<style>
-    table {
-        border: 1px solid black;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <style>
+        table {
+           border: 1px solid black;
         border-collapse: collapse;
         font-family: Verdana;
-        font-size: large;
-    }
-    th, td {
+        font-size: large; 
+        }
+    th ,td {
         border: 1px dashed black;
         padding: 5px;
         text-align: center;
@@ -26,24 +28,20 @@
     .diag {
         background-color: bisque;
     }
-</style>
-</head>
-<body>
-
-<h2>Tabliczka mnożenia</h2>
+    </style>
+ </head>
+ <body>
+    <h2>Tabliczka mnożenia</h2>
 
 <table>
 
 <?php
 $liczby = range(1, 10);
-
-
 echo "<tr><th>x</th>";
 foreach ($liczby as $n) {
     echo "<th>$n</th>";
 }
 echo "</tr>";
-
 
 foreach ($liczby as $i) {
     echo "<tr>";
@@ -57,13 +55,11 @@ foreach ($liczby as $i) {
         } else {
             echo "<td>$wynik</td>";
         }
-    }
-
-    echo "</tr>";
+    }echo "</tr>";
 }
 ?>
 
-</table>
+    
 
 </body>
 </html>

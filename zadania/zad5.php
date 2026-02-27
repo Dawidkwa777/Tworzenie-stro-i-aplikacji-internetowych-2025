@@ -19,6 +19,5 @@ $link_3 = 'https://www.interia.pl/';
       <li><a href="<?= $link_1 ?>">wirtualna polska</a></li>
       <li><a href="<?= $link_2 ?>">onet</a></li>
       <li><a href="<?= $link_3 ?>">interia</a></li>
-
 </body>
 </html>
