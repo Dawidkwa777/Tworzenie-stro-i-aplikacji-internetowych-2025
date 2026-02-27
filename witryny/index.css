@@ -1,0 +1,73 @@
+span{
+background-color: blue;
+color: white;
+width: 28px;
+height: 50px;
+}
+ 
+em{
+background-color: yellow;
+color: red;
+}
+ 
+strong{
+    background-color: green;
+    color: greenyellow;
+}
+ 
+a{
+    background-color: red;
+    color: white;
+}
+div.blue{
+background-color: blue;
+}
+ 
+div.yellow{
+    background-color: yellow;
+}
+ 
+li.green{
+    background-color: green;
+}
+li.red{
+    background-color: red;
+}
+div{
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    border:1px solid black;
+}
+li{
+    width: 200px;
+    height: 20px;
+    
+}
+div.basic{
+    display:inline-block;
+    
+}
+
+div.y{
+    background-color: yellow;
+    padding: 10px;
+}
+div.b{
+    display: none;
+    background-color: blue;
+    padding: 10px;
+}
+div.g{
+    background-color: green;
+    padding: 10px;
+
+}
+div.r{
+    background-color: red;
+    padding: 10px;
+}
+div.o{
+    background-color: orange;
+    padding: 10px;
+}
