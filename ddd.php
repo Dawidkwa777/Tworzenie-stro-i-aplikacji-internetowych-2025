@@ -28,4 +28,19 @@ $pole = ($a * $a * $pierwiastek3) / 4;
 
 </body>
 </html>
+<?php
+$server_data = [
+    
+];
 
+// sortowanie według kluczy (alfabetycznie)
+ksort($server_data);
+
+echo "<ul>";
+
+foreach ($server_data as $key => $value) {
+    echo "<li>$key = $value</li>";
+}
+
+echo "</ul>";
+?>
