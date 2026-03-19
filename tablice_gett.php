@@ -40,7 +40,7 @@
 
 
     <?php
-    echo "Urodziłem się we: " . $tydzien[3] . ", 7 " . $miesiące[5] . " 2008 roku."; ?> <br>
+    echo "Urodziłem się we: " . $tydzien[5] . ", 7 " . $miesiące[10] . " 2007 roku."; ?> <br>
     <?php
     echo "Tablic w PHP nauczę się:" . $tydzien[4] .  " 19 " . $miesiące[3] . " 2026 roku.";
 
