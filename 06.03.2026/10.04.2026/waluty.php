@@ -1,12 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>waluty</title>
+    <title>waluty.php</title>
 </head>
 <body>
-    <form method="post" action="waluty.php">
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $kwota = $_POST["kwota"];
+    $waluta = $_POST["waluta"];
+
+    echo "<p>Oto twój wybór: $kwota $waluta.</p>";
+} ?>
+else{ <form method="post" action="waluty.php">
     <div>
         <label>Podaj kwotę:</label>
         <input type="number" name="kwota">
@@ -21,7 +29,9 @@
         </select>
     </div>
 
-    <button type="submit">Wybierz</button>
+    <button type="submit">Wybierz</button>}
+    
+
 </form>
 </body>
 </html>
