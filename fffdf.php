@@ -27,7 +27,7 @@
 
 $servername = "localhost";
 $username = "kwasniewski";
-$password = "kwasniewski";
+$password = "aha";
 $database = "kwasniewski";
 
 $conn = mysqli_connect($servername, $username, $password, $database);
@@ -47,13 +47,14 @@ else
     echo "<th>Wynagrodzenie</th>";
     echo "</tr>";
 
-    $query = "
-    SELECT imie, nazwisko, miasto, data_zatrudnienia, wynagrodzenie
-    FROM pracownicy
-    WHERE stanowisko = 'księgowy'
-    AND wynagrodzenie > 2000
-    ORDER BY wynagrodzenie DESC
-    ";
+    $query = <<<EOD
+        SELECT imie, 
+            nazwisko, 
+            miasto,
+            data_zatrudnienia,
+            wynagrodzenie
+        FROM pracownicy
+    EOD;
 
     $result = mysqli_query($conn, $query);
 

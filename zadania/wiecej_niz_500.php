@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Więcej niż 500 stron</title>
-
+    <title>Document</title>
     <style>
         table, th, td{
             border: 1px solid black;
@@ -16,21 +15,20 @@
             text-align: right;
         }
     </style>
-</head>
-<body>
 
-<?php
+    <?php
+
 
 $servername = "localhost";
 $username = "kwasniewski";
 $password = "aha";
 $database = "kwasniewski";
 
-$conn = mysqli_connect($servername, $username, $password, $database);
+$conn = mysqli_connect($servername, $username , $password , $database);
 
-if(!$conn)
+if(!%conn)
 {
-    echo "Błąd połączenia z bazą danych: " . mysqli_connect_error();
+    echo "Błąd połączenia z bazą danych:  " . mysqli_connect_error();
 }
 else
 {
@@ -46,7 +44,6 @@ else
     echo "<th>Liczba stron</th>";
     echo "<th>Cena</th>";
     echo "</tr>";
-
     $query = "
     SELECT ksiazki.Sygnatura,
            ksiazki.Tytul,
@@ -54,16 +51,15 @@ else
            dzialy.Nazwa AS dzial,
            ksiazki.Wydawnictwo,
            ksiazki.Rok_wyd,
-           ksiazki.Liczba_stron,
+           ksiazki.Objetosc_ks
            ksiazki.Cena
     FROM ksiazki
     JOIN dzialy
     ON ksiazki.ID_dzial = dzialy.ID_dzial
-    WHERE ksiazki.Liczba_stron > 500
-    ORDER BY ksiazki.Liczba_stron ASC
+    WHERE ksiazki.Objetosc_ks > 500
+    ORDER BY ksiazki.Objetosc_ks ASC
     ";
-
-    $result = mysqli_query($conn, $query);
+  $result = mysqli_query($conn, $query);
 
     if(mysqli_num_rows($result) > 0)
     {
@@ -83,7 +79,7 @@ else
 
             echo "<td>" . $row['Rok_wyd'] . "</td>";
 
-            echo "<td class='right'>" . $row['Liczba_stron'] . "</td>";
+            echo "<td class='right'>" . $row['Objetosc_ks'] . "</td>";
 
             $zl = floor($row['Cena']);
             $gr = ($row['Cena'] - $zl) * 100;
@@ -102,8 +98,5 @@ else
 
     mysqli_close($conn);
 }
-
-?>
-
 </body>
 </html>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Więcej niż 500 stron</title>
+    <title>Document</title>
 
     <style>
         table, th, td{
@@ -18,6 +18,7 @@
     </style>
 </head>
 <body>
+
 
 <?php
 
@@ -40,30 +41,24 @@ else
     echo "<th>Sygnatura</th>";
     echo "<th>Tytuł</th>";
     echo "<th>Autor</th>";
-    echo "<th>Dział</th>";
     echo "<th>Wydawnictwo</th>";
     echo "<th>Rok wydania</th>";
-    echo "<th>Liczba stron</th>";
     echo "<th>Cena</th>";
     echo "</tr>";
-
     $query = "
     SELECT ksiazki.Sygnatura,
            ksiazki.Tytul,
-           CONCAT(ksiazki.Imie, ' ', ksiazki.Nazwisko) AS autor,
-           dzialy.Nazwa AS dzial,
+           CONCAT(ksiazki.Imie, ' ',ksiazki.Nazwisko) AS autor,
            ksiazki.Wydawnictwo,
            ksiazki.Rok_wyd,
-           ksiazki.Liczba_stron,
            ksiazki.Cena
     FROM ksiazki
-    JOIN dzialy
-    ON ksiazki.ID_dzial = dzialy.ID_dzial
-    WHERE ksiazki.Liczba_stron > 500
-    ORDER BY ksiazki.Liczba_stron ASC
-    ";
-
-    $result = mysqli_query($conn, $query);
+    WHERE (ksiazki.wydawnictwo = 'PWN' OR ksiazki.wydawnictwo = 'Helion')
+    AND ksiazki.Rok_wyd > 1990
+    AND ksiazki.Rok_wyd< 2011
+    ORDER BY ksiazki.Rok_wyd ASC
+";
+$result = mysqli_query($conn, $query);
 
     if(mysqli_num_rows($result) > 0)
     {
@@ -77,13 +72,9 @@ else
 
             echo "<td>" . $row['autor'] . "</td>";
 
-            echo "<td>" . $row['dzial'] . "</td>";
-
             echo "<td>" . $row['Wydawnictwo'] . "</td>";
 
             echo "<td>" . $row['Rok_wyd'] . "</td>";
-
-            echo "<td class='right'>" . $row['Liczba_stron'] . "</td>";
 
             $zl = floor($row['Cena']);
             $gr = ($row['Cena'] - $zl) * 100;
@@ -95,15 +86,13 @@ else
     }
     else
     {
-        echo "<tr><td colspan='8'>Brak danych</td></tr>";
+        echo "<tr><td colspan='6'>Brak danych</td></tr>";
     }
 
     echo "</table>";
 
     mysqli_close($conn);
 }
-
 ?>
-
 </body>
 </html>
